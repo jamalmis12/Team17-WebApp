@@ -10,7 +10,7 @@ from yolov5 import YOLOv5  # Import YOLOv5
 app = Flask(__name__)
 
 # Load the YOLOv5 model (adjust path to your actual best.pt file)
-model = YOLOv5('best.pt', device='cpu')  # Use 'cuda' if you have a GPU
+model = YOLOv5('best.onnx', device='cpu')  # Use 'cuda' if you have a GPU
 
 # Function to calculate the Cobb angle
 def calculate_cobb_angle(points):
